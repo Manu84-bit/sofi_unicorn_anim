@@ -4,7 +4,7 @@
     const animationStates = {
         // tired: "assets/sprite_sheet_idle1.png",
         // yawn: "assets/sprite_sheet_idle2.png",
-        run: "assets/sprite_sheet_run.png",
+        run: "assets/sprite_sheet_run2.png",
     };
 
     let playerState = "run";
@@ -29,9 +29,9 @@
 
     const spriteWidth = 728;
     const spriteHeight = 468;
-    let numberOfFrames = 9;
+    let numberOfFrames = 7;
     let gameFrame =0;
-    let frameChangeInterval = 6;
+    let frameChangeInterval = 7;
     let frameX= 0;
     
     function animate(){
@@ -56,7 +56,7 @@
             canvasPosition = initialCanvasPosition;
         }
 
-        canvasPosition -= 0.8;
+        canvasPosition -= 0.4;
         canvas.style.left = canvasPosition +"px";
         gameFrame++;
         requestAnimationFrame(animate);
